@@ -3,13 +3,22 @@
 @tailwind utilities;
 
 @import './fonts';
+@import './colors';
 
 @layer {
 	.header {
 		@apply flex flex-row justify-between items-center;
 
+		&__logo {
+			@apply order-1;
+		}
+
 		&__nav {
-			@apply flex flex-col bg-bgcolor200;
+			@apply order-3 lg:order-2 flex flex-col bg-bgcolor200 absolute right-0 top-14 w-full h-full text-2xl text-bgwhite font-medium;
+		}
+
+		&__menuIcon {
+			@apply order-2 lg:hidden;
 		}
 	}
 }
@@ -26,5 +35,22 @@
 		font-weight: 700;
 		font-size: 36px;
 		text-transform: uppercase;
+	}
+
+	@media (max-width: 520px) {
+		&__nav * {
+			width: 100%;
+			padding: 2rem 0 2rem 1rem;
+
+			&:hover {
+				border: 2px solid $bg-color-100;
+				border-radius: 20px;
+				transition: all 700ms ease-out;
+			}
+		}
+
+		&__nav :not(:first-child) {
+			margin-top: 52px;
+		}
 	}
 }

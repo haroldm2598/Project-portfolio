@@ -3,6 +3,7 @@ export default {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
 		colors: {
+			bgwhite: '#ffffff',
 			bgcolor100: '#6f1d1b',
 			bgcolor200: '#bb9457',
 			bgcolor300: '#432818',

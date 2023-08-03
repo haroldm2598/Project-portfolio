@@ -1,7 +1,13 @@
+import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { FaAlignJustify } from 'react-icons/fa6';
 
 function Header() {
+	const [isShow, SetIsShow] = useState(true);
+
+	function handleNavbarShow() {
+		SetIsShow((oldState) => !oldState);
+	}
 	return (
 		<>
 			<header className='header mx-5'>
@@ -9,13 +15,13 @@ function Header() {
 					<Link to='/'>logo</Link>
 				</h1>
 
-				<nav className='header__nav'>
+				<nav className={`${isShow ? 'header__nav p-10' : 'hidden'}`}>
 					<NavLink to='/'>Home</NavLink>
 					<NavLink to='/About'>About</NavLink>
 					<NavLink to='/Project'>Project</NavLink>
 				</nav>
 
-				<div className='header__menuIcon'>
+				<div className='header__menuIcon' onClick={handleNavbarShow}>
 					<span>
 						<FaAlignJustify />
 					</span>
