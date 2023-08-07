@@ -15,7 +15,7 @@ function Header() {
 					<Link to='/'>logo</Link>
 				</h1>
 
-				<nav className={`${isShow ? 'header__nav p-10' : 'hidden'}`}>
+				<nav className={`${isShow ? 'header__nav' : 'hidden'}`}>
 					<NavLink to='/'>Home</NavLink>
 					<NavLink to='/About'>About</NavLink>
 					<NavLink to='/Project'>Project</NavLink>
