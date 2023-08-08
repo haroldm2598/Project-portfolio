@@ -19,7 +19,7 @@ function Header() {
 					className={`${
 						isShow
 							? 'header__nav'
-							: 'lg:order-2 lg:flex lg:justify-around lg:items-center lg:text-7xl lg:w-full hidden'
+							: 'lg:order-2 lg:flex lg:justify-around lg:items-center lg:text-7xl lg:w-104 hidden'
 					}`}
 				>
 					<NavLink to='/'>Home</NavLink>

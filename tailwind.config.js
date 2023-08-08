@@ -11,6 +11,18 @@ export default {
 			bgcolor500: '#ffe6a7'
 		},
 		extend: {
+			width: {
+				100: '28rem',
+				101: '30rem',
+				102: '32rem',
+				103: '34rem',
+				104: '36rem'
+			},
+			lineHeight: {
+				11: '2.75rem',
+				12: '3rem',
+				13: '3.25rem'
+			},
 			keyframes: {
 				wiggle: {
 					// '0%': { transform: 'translate(500px, 0px)' },
