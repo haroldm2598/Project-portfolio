@@ -10,11 +10,11 @@
 		@apply flex flex-row justify-between items-center;
 
 		&__logo {
-			@apply order-1;
+			@apply order-1 lg:order-1;
 		}
 
 		&__nav {
-			@apply order-3 lg:order-2 flex flex-col bg-bgcolor200 absolute right-0 top-14 w-full h-auto p-10 text-2xl text-bgwhite font-medium animate-wiggle lg:flex;
+			@apply order-3  flex flex-col bg-bgcolor200 absolute right-0 top-36 w-full h-auto p-10 text-8xl text-bgwhite font-medium animate-wiggle;
 
 			* {
 				@apply w-full py-8 pl-4 hover:border-4 hover:border-bgcolor100 hover:transition-all hover:duration-700 hover:ease-out;
@@ -26,7 +26,7 @@
 		}
 
 		&__menuIcon {
-			@apply order-2 lg:hidden cursor-pointer;
+			@apply order-2 lg:hidden cursor-pointer text-7xl;
 		}
 	}
 }
@@ -35,13 +35,14 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-size: 62.5%;
 }
 
 .header {
 	&__logo {
 		font-family: $mainFont;
 		font-weight: 700;
-		font-size: 36px;
+		font-size: 6rem;
 		text-transform: uppercase;
 	}
 

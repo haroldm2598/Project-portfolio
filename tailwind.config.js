@@ -13,12 +13,13 @@ export default {
 		extend: {
 			keyframes: {
 				wiggle: {
-					// '0%, 100%': { transform: 'rotate(-3deg)' },
-					'50%': { transform: 'translate(-500px, 0px)' }
+					// '0%': { transform: 'translate(500px, 0px)' },
+					'50%': { transform: 'translate(500px, 0px)' },
+					'100%': { transform: 'translate(0px, 0px)' }
 				}
 			},
 			animation: {
-				wiggle: 'wiggle 1.5s ease-in-out'
+				wiggle: 'wiggle 1s ease-in-out'
 			}
 		}
 	},
