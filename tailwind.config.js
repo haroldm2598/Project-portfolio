@@ -8,7 +8,8 @@ export default {
 			bgcolor200: '#bb9457',
 			bgcolor300: '#432818',
 			bgcolor400: '#b96d38',
-			bgcolor500: '#ffe6a7'
+			bgcolor500: '#ffe6a7',
+			bgcolor600: '#F6F1F1'
 		},
 		extend: {
 			width: {
@@ -18,11 +19,20 @@ export default {
 				103: '34rem',
 				104: '36rem'
 			},
+			height: {
+				100: '28rem',
+				101: '30rem',
+				102: '32rem',
+				103: '34rem',
+				104: '36rem'
+			},
 			lineHeight: {
 				11: '2.75rem',
 				12: '3rem',
-				13: '3.25rem'
+				13: '3.25rem',
+				14: '12rem'
 			},
+			fontSize: { '10xl': '10rem', '11xl': '12rem', '12xl': '14rem' },
 			keyframes: {
 				wiggle: {
 					// '0%': { transform: 'translate(500px, 0px)' },
