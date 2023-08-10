@@ -1,11 +1,11 @@
-function Button({ name, handleClick, childrem }) {
+function Button({ name, handleClick, children }) {
 	return (
 		<>
 			<button
-				className='w-96 h-28 text-4xl font-medium bg-bgcolor400 text-bgwhite rounded-xl'
+				className='w-96 h-28 flex flex-row justify-center items-center text-4xl font-medium bg-bgcolor400 text-bgwhite rounded-xl'
 				onClick={handleClick}
 			>
-				{name} {childrem}
+				{name} {children}
 			</button>
 		</>
 	);

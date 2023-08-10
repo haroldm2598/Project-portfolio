@@ -17,7 +17,13 @@ export default {
 				101: '30rem',
 				102: '32rem',
 				103: '34rem',
-				104: '36rem'
+				104: '36rem',
+				150: '50rem',
+				151: '52rem',
+				152: '54rem',
+				153: '56rem',
+				154: '58rem',
+				155: '60rem'
 			},
 			height: {
 				100: '28rem',
@@ -31,6 +37,10 @@ export default {
 				12: '3rem',
 				13: '3.25rem',
 				14: '12rem'
+			},
+			fontFamily: {
+				poppins: "'Poppins', sans-serif",
+				inter: "'Inter', sans-serif"
 			},
 			fontSize: { '10xl': '10rem', '11xl': '12rem', '12xl': '14rem' },
 			keyframes: {

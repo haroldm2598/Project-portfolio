@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import Button from '../component/Button';
 import image from '../assets/image/homepage.png';
+import { FaArrowRight } from 'react-icons/fa6';
 
 function HomePage() {
 	function handleClick() {}
@@ -29,10 +30,11 @@ function HomePage() {
 						works and experience.
 					</h1>
 					<Link to='/About'>
-						<Button
-							name='learn about myself'
-							handleClick={handleClick}
-						></Button>
+						<Button name='learn about myself' handleClick={handleClick}>
+							<span className='mt-2 ml-5 text-5xl'>
+								<FaArrowRight />
+							</span>
+						</Button>
 					</Link>
 				</div>
 			</div>

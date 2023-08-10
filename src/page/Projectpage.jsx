@@ -1,7 +1,13 @@
+import ProjectContent from '../component/ProjectContent';
+
 function ProjectPage() {
 	return (
 		<>
-			<h1>Hello welcome to ProjectPage</h1>
+			<section className='my-10 px-10'>
+				<ProjectContent />
+				<ProjectContent />
+				<ProjectContent />
+			</section>
 		</>
 	);
 }

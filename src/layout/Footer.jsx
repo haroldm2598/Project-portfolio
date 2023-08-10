@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 function Footer() {
 	return (
 		<>
-			<footer className='w-full h-48 flex flex-col justify-center items-center text-6xl bg-bgcolor500  lg:px-20 lg:flex-row lg:justify-around'>
+			<footer className='w-full h-48 flex flex-col justify-center items-center text-6xl bg-bgcolor500/40  lg:px-20 lg:flex-row lg:justify-around'>
 				<div className='order-2 lg:order-1'>
 					<h1>@ copyright 2023, harold mag-isa</h1>
 				</div>
