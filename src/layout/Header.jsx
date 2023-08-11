@@ -10,7 +10,7 @@ function Header() {
 	}
 	return (
 		<>
-			<header className='header mx-5 lg:mx-20'>
+			<header className='header mx-10 lg:mx-20'>
 				<h1 className='header__logo'>
 					<Link to='/'>logo</Link>
 				</h1>

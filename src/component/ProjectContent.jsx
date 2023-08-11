@@ -1,7 +1,10 @@
+import { useContext } from 'react';
 import Button from './Button';
-// import image from '../assets/image/homepage.png';
+import { ButtonContext } from '../page/Projectpage';
 
 function ProjectContent(props) {
+	const { setButtonTheme } = useContext(ButtonContext);
+
 	return (
 		<>
 			<section className='my-10 flex flex-col justify-center items-center lg:mx-20 lg:flex-row lg:justify-around'>
@@ -23,8 +26,12 @@ function ProjectContent(props) {
 						{props.techStack}
 					</p>
 					<div className='[&>*]:my-10 [&>*]:lg:m-5 lg:flex lg:flex-row'>
-						<Button name='live preview' />
-						<Button name='source code' />
+						<div onMouseEnter={(e) => setButtonTheme(true)}>
+							<Button name='live preview' />
+						</div>
+						<div onMouseEnter={(e) => setButtonTheme(false)}>
+							<Button name='source code' />
+						</div>
 					</div>
 				</div>
 			</section>
