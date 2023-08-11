@@ -24,19 +24,19 @@ function Header() {
 				>
 					<NavLink
 						to='/'
-						className="lg:hover:text-bgcolor100 lg:relative after:content-[' '] after:h-1 after:w-full after:bg-bgcolor100 after:absolute after:left-0 after:-bottom-4 after:opacity-0 after:transition-all hover:after:opacity-100"
+						className="lg:hover:text-bgcolor100 lg:relative lg:after:content-[' '] lg:after:h-1 lg:after:w-full lg:after:bg-bgcolor100 lg:after:absolute lg:after:left-0 lg:after:-bottom-4 lg:after:opacity-0 lg:after:transition-all lg:after:duration-500 lg:hover:after:opacity-100"
 					>
 						Home
 					</NavLink>
 					<NavLink
 						to='/About'
-						className="lg:hover:text-bgcolor100 lg:relative after:content-[' '] after:h-1 after:w-full after:bg-bgcolor100 after:absolute after:left-0 after:-bottom-4 after:opacity-0 after:transition-all hover:after:opacity-100"
+						className="lg:hover:text-bgcolor100 lg:relative lg:after:content-[' '] lg:after:h-1 lg:after:w-full lg:after:bg-bgcolor100 lg:after:absolute lg:after:left-0 lg:after:-bottom-4 lg:after:opacity-0 lg:after:transition-all lg:after:duration-500 lg:hover:after:opacity-100"
 					>
 						About
 					</NavLink>
 					<NavLink
 						to='/Project'
-						className="lg:hover:text-bgcolor100 lg:relative after:content-[' '] after:h-1 after:w-full after:bg-bgcolor100 after:absolute after:left-0 after:-bottom-4 after:opacity-0 after:transition-all hover:after:opacity-100"
+						className="lg:hover:text-bgcolor100 lg:relative lg:after:content-[' '] lg:after:h-1 lg:after:w-full lg:after:bg-bgcolor100 lg:after:absolute lg:after:left-0 lg:after:-bottom-4 lg:after:opacity-0 lg:after:transition-all lg:after:duration-500 lg:hover:after:opacity-100"
 					>
 						Project
 					</NavLink>
