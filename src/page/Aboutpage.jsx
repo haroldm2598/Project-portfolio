@@ -1,8 +1,26 @@
+// REACT
+import { useRef, useEffect } from 'react';
+import { motion, useInView, useAnimation } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa6';
+
+// COMPONENTS
 import Button from '../component/Button';
 
 function AboutPage() {
+	const ref = useRef(null);
+	const isInView = useInView(ref, { once: true });
+
+	const inTouchControls = useAnimation();
+	const inTouchInputControls = useAnimation();
+
+	useEffect(() => {
+		if (isInView) {
+			inTouchControls.start('visible');
+			inTouchInputControls.start('visible');
+		}
+	}, [isInView]);
+
 	return (
 		<>
 			<section className='h-full mx-8 my-20 flex flex-col justify-between items-center lg:mx-20'>
@@ -32,32 +50,56 @@ function AboutPage() {
 					</Button>
 				</Link>
 			</section>
-			<section className='min-h-0 px-10 py-20 bg-bgcolor100/40 flex flex-col justify-center items-center lg:px-20'>
-				<h1 className='my-10 font-poppins text-12xl uppercase font-bold text-bgcolor600 leading-14 opacity-40 animate-toLeft lg:self-start'>
-					get in touch
-				</h1>
-				<div className='animate-toTop lg:my-10 lg:w-152'>
-					<input
-						type='text'
-						placeholder='name'
-						className='w-full h-24 mb-4 px-2 text-4xl rounded-lg placeholder:font-medium placeholder:opacity-50'
-					/>
-					<input
-						type='text'
-						placeholder='email'
-						className='w-full h-24 mb-4 px-2 text-4xl rounded-lg placeholder:font-medium placeholder:opacity-50'
-					/>
-					<textarea
-						name='message'
-						placeholder='message'
-						className='w-full h-40 mb-8 px-2 text-4xl rounded-lg placeholder:font-medium placeholder:opacity-50'
-					></textarea>
-				</div>
-				<Link to='/'>
-					<Button customClass='w-96 bg-bgcolor400 text-bgwhite animate-toTop'>
-						<p className='text-4xl'>Submit</p>
-					</Button>
-				</Link>
+			<section
+				ref={ref}
+				className='min-h-0 px-10 py-20 bg-bgcolor100/40 flex flex-col justify-center items-center lg:px-20'
+			>
+				<motion.div
+					variants={{
+						hidden: { opacity: 0, x: 100 },
+						visible: { opacity: 1, x: 0 }
+					}}
+					initial='hidden'
+					animate={inTouchControls}
+					transition={{ duration: 1.5, delay: 0.5 }}
+				>
+					<h1 className='my-10 font-poppins text-12xl uppercase font-bold text-bgcolor600 leading-14 opacity-40 lg:self-start'>
+						get in touch
+					</h1>
+				</motion.div>
+
+				<motion.div
+					variants={{
+						hidden: { opacity: 0, y: 100 },
+						visible: { opacity: 1, y: 0 }
+					}}
+					initial='hidden'
+					animate={inTouchInputControls}
+					transition={{ duration: 1, delay: 0.25 }}
+				>
+					<div className='lg:my-10 lg:w-152'>
+						<input
+							type='text'
+							placeholder='name'
+							className='w-full h-24 mb-4 px-2 text-4xl rounded-lg placeholder:font-medium placeholder:opacity-50'
+						/>
+						<input
+							type='text'
+							placeholder='email'
+							className='w-full h-24 mb-4 px-2 text-4xl rounded-lg placeholder:font-medium placeholder:opacity-50'
+						/>
+						<textarea
+							name='message'
+							placeholder='message'
+							className='w-full h-40 mb-8 px-2 text-4xl rounded-lg placeholder:font-medium placeholder:opacity-50'
+						></textarea>
+					</div>
+					<Link to='/'>
+						<Button customClass='w-96 bg-bgcolor400 text-bgwhite animate-toTop'>
+							<p className='text-4xl'>Submit</p>
+						</Button>
+					</Link>
+				</motion.div>
 			</section>
 		</>
 	);
