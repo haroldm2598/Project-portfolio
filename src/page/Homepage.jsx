@@ -7,7 +7,7 @@ function HomePage() {
 	function handleClick() {}
 	return (
 		<>
-			<div className='my-10 flex flex-col lg:flex-row items-center justify-center lg:mx-20'>
+			<div className='my-32 flex flex-col lg:flex-row items-center justify-center lg:mx-20 lg:my-10'>
 				<div className='relative lg:w-3/4 lg:flex-1'>
 					<div className='z-10'>
 						<img src={image} alt='image' />
@@ -30,7 +30,11 @@ function HomePage() {
 						works and experience.
 					</h1>
 					<Link to='/About'>
-						<Button name='learn about myself' handleClick={handleClick}>
+						<Button
+							customClass='w-101 bg-bgcolor400 text-bgwhite'
+							handleClick={handleClick}
+						>
+							<p className='text-4xl'>learn about myself</p>
 							<span className='mt-2 ml-5 text-5xl'>
 								<FaArrowRight />
 							</span>

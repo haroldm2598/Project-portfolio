@@ -1,17 +1,8 @@
-import { useContext } from 'react';
-import { ButtonContext } from '../page/Projectpage';
-
-function Button({ name, handleClick, children }) {
-	const { buttonTheme } = useContext(ButtonContext);
-
+function Button({ name, handleClick, customClass, children }) {
 	return (
 		<>
 			<button
-				className={`w-96 h-28 flex flex-row justify-center items-center text-4xl font-medium   rounded-xl ${
-					buttonTheme
-						? 'bg-bgcolor400 text-bgwhite'
-						: 'bg-bgwhite text-bgcolor100 border-bgcolor400 border-2'
-				}`}
+				className={`${customClass} h-28 flex flex-row justify-center items-center text-4xl font-medium rounded-xl  childOdd:duration-200 childOdd:hover:-translate-x-2 childEven:duration-200 childEven:hover:translate-x-2`}
 				onClick={handleClick}
 			>
 				{name} {children}

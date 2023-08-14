@@ -6,10 +6,10 @@ function AboutPage() {
 	return (
 		<>
 			<section className='h-full mx-8 my-20 flex flex-col justify-between items-center lg:mx-20'>
-				<h1 className='font-poppins text-12xl uppercase font-bold text-bgcolor100 opacity-20 lg:self-end'>
+				<h1 className='font-poppins text-12xl uppercase font-bold text-bgcolor100 opacity-20 animate-toRight lg:self-end'>
 					about
 				</h1>
-				<div className='mb-10'>
+				<div className='mb-10 animate-toLeft'>
 					<h2 className='mb-5 font-inter text-5xl font-medium'>
 						hello i&#180;m harold mag-isa
 					</h2>
@@ -24,7 +24,8 @@ function AboutPage() {
 					</p>
 				</div>
 				<Link to='/Project'>
-					<Button name='projects'>
+					<Button customClass='w-96 bg-bgcolor400 text-bgwhite animate-toTop'>
+						<p className='text-4xl'>projects</p>
 						<span className='mt-2 ml-5 text-5xl'>
 							<FaArrowRight />
 						</span>
@@ -32,10 +33,10 @@ function AboutPage() {
 				</Link>
 			</section>
 			<section className='min-h-0 px-10 py-20 bg-bgcolor100/40 flex flex-col justify-center items-center lg:px-20'>
-				<h1 className='my-10 font-poppins text-12xl uppercase font-bold text-bgcolor600 leading-14 opacity-40 lg:self-start'>
+				<h1 className='my-10 font-poppins text-12xl uppercase font-bold text-bgcolor600 leading-14 opacity-40 animate-toLeft lg:self-start'>
 					get in touch
 				</h1>
-				<div className='lg:my-10 lg:w-152'>
+				<div className='animate-toTop lg:my-10 lg:w-152'>
 					<input
 						type='text'
 						placeholder='name'
@@ -53,7 +54,9 @@ function AboutPage() {
 					></textarea>
 				</div>
 				<Link to='/'>
-					<Button name='Submit'></Button>
+					<Button customClass='w-96 bg-bgcolor400 text-bgwhite animate-toTop'>
+						<p className='text-4xl'>Submit</p>
+					</Button>
 				</Link>
 			</section>
 		</>

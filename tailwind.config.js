@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin');
+
 export default {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
@@ -48,12 +50,32 @@ export default {
 					// '0%': { transform: 'translate(500px, 0px)' },
 					'50%': { transform: 'translate(500px, 0px)' },
 					'100%': { transform: 'translate(0px, 0px)' }
+				},
+				toRight: {
+					'0%': { transform: 'translateX(100%)' },
+					'100%': { transform: 'translateX(0%)' }
+				},
+				toLeft: {
+					'0%': { transform: 'translateX(-100%)' },
+					'100%': { transform: 'translateX(0%)' }
+				},
+				toTop: {
+					'0%': { transform: 'translateY(500px)' },
+					'100%': { transform: 'translateY(0%)' }
 				}
 			},
 			animation: {
-				wiggle: 'wiggle 1s ease-in-out'
+				wiggle: 'wiggle 1s ease-in-out',
+				toRight: 'toRight 1.2s ease-in forwards',
+				toLeft: 'toLeft 1.2s ease-in forwards',
+				toTop: 'toTop 1s ease-in forwards'
 			}
 		}
 	},
-	plugins: []
+	plugins: [
+		plugin(function ({ addVariant }) {
+			addVariant('childOdd', '&>*:nth-child(odd)');
+			addVariant('childEven', '&>*:nth-child(even)');
+		})
+	]
 };

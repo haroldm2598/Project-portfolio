@@ -1,10 +1,8 @@
-import { useContext } from 'react';
+import { FaCode } from 'react-icons/fa6';
+import { CgWebsite } from 'react-icons/cg';
 import Button from './Button';
-import { ButtonContext } from '../page/Projectpage';
 
 function ProjectContent(props) {
-	const { setButtonTheme } = useContext(ButtonContext);
-
 	return (
 		<>
 			<section className='my-10 flex flex-col justify-center items-center lg:mx-20 lg:flex-row lg:justify-around'>
@@ -26,12 +24,18 @@ function ProjectContent(props) {
 						{props.techStack}
 					</p>
 					<div className='[&>*]:my-10 [&>*]:lg:m-5 lg:flex lg:flex-row'>
-						<div onMouseEnter={(e) => setButtonTheme(true)}>
-							<Button name='live preview' />
-						</div>
-						<div onMouseEnter={(e) => setButtonTheme(false)}>
-							<Button name='source code' />
-						</div>
+						<Button customClass='w-96 bg-bgcolor400 text-bgwhite'>
+							<p className='text-4xl'>live preview</p>
+							<span className='mt-2 ml-5 text-5xl'>
+								<CgWebsite />
+							</span>
+						</Button>
+						<Button customClass='w-96 bg-bgwhite text-bgcolor100 border-bgcolor400 border-2'>
+							<p className='text-4xl'>source code</p>
+							<span className='mt-2 ml-5 text-5xl'>
+								<FaCode />
+							</span>
+						</Button>
 					</div>
 				</div>
 			</section>
