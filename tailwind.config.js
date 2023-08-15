@@ -47,9 +47,9 @@ export default {
 			fontSize: { '10xl': '10rem', '11xl': '12rem', '12xl': '14rem' },
 			keyframes: {
 				wiggle: {
-					// '0%': { transform: 'translate(500px, 0px)' },
-					'50%': { transform: 'translate(500px, 0px)' },
-					'100%': { transform: 'translate(0px, 0px)' }
+					'0%': { transform: 'translateX(500px)' },
+					// '50%': { transform: 'translate(500px, 0px)' },
+					'100%': { transform: 'translateX(0px)' }
 				},
 				toRight: {
 					'0%': { transform: 'translateX(100%)' },

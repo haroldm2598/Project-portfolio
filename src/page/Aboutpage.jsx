@@ -76,24 +76,24 @@ function AboutPage() {
 					initial='hidden'
 					animate={inTouchInputControls}
 					transition={{ duration: 1, delay: 0.25 }}
+					className='lg:my-10 lg:w-152'
 				>
-					<div className='lg:my-10 lg:w-152'>
-						<input
-							type='text'
-							placeholder='name'
-							className='w-full h-24 mb-4 px-2 text-4xl rounded-lg placeholder:font-medium placeholder:opacity-50'
-						/>
-						<input
-							type='text'
-							placeholder='email'
-							className='w-full h-24 mb-4 px-2 text-4xl rounded-lg placeholder:font-medium placeholder:opacity-50'
-						/>
-						<textarea
-							name='message'
-							placeholder='message'
-							className='w-full h-40 mb-8 px-2 text-4xl rounded-lg placeholder:font-medium placeholder:opacity-50'
-						></textarea>
-					</div>
+					<input
+						type='text'
+						placeholder='name'
+						className='w-full h-24 mb-4 px-2 text-4xl rounded-lg placeholder:font-medium placeholder:opacity-50'
+					/>
+					<input
+						type='text'
+						placeholder='email'
+						className='w-full h-24 mb-4 px-2 text-4xl rounded-lg placeholder:font-medium placeholder:opacity-50'
+					/>
+					<textarea
+						name='message'
+						placeholder='message'
+						className='w-full h-40 mb-8 px-2 text-4xl rounded-lg placeholder:font-medium placeholder:opacity-50'
+					></textarea>
+
 					<Link to='/'>
 						<Button customClass='w-96 bg-bgcolor400 text-bgwhite animate-toTop'>
 							<p className='text-4xl'>Submit</p>

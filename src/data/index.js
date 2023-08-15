@@ -14,8 +14,8 @@ export const projectObjects = [
 		image: '/src/assets/image/todolist.png',
 		orderImage: 2,
 		orderInfo: 1,
-		orderImagePosition: -1000,
-		orderInfoPosition: 1000
+		orderImagePosition: 1000,
+		orderInfoPosition: -1000
 	},
 	{
 		title: 'Resume Builder',
@@ -24,8 +24,8 @@ export const projectObjects = [
 		image: '/src/assets/image/resume.png',
 		orderImage: 1,
 		orderInfo: 2,
-		orderImagePosition: 1000,
-		orderInfoPosition: -1000
+		orderImagePosition: -1000,
+		orderInfoPosition: 1000
 	},
 	{
 		title: 'Memory Game',
@@ -34,8 +34,8 @@ export const projectObjects = [
 		image: '/src/assets/image/memoryGame.png',
 		orderImage: 2,
 		orderInfo: 1,
-		orderImagePosition: -1000,
-		orderInfoPosition: 1000
+		orderImagePosition: 1000,
+		orderInfoPosition: -1000
 	},
 	{
 		title: 'Ecommerce',
@@ -53,7 +53,7 @@ export const projectObjects = [
 		image: '/src/assets/image/ecommerce.png',
 		orderImage: 1,
 		orderInfo: 2,
-		orderImagePosition: 1000,
-		orderInfoPosition: -1000
+		orderImagePosition: -1000,
+		orderInfoPosition: 1000
 	}
 ];
