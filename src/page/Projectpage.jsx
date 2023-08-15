@@ -11,6 +11,8 @@ function ProjectPage() {
 			image={item.image}
 			orderImage={item.orderImage}
 			orderInfo={item.orderInfo}
+			orderImagePosition={item.orderImagePosition}
+			orderInfoPosition={item.orderInfoPosition}
 		/>
 	));
 

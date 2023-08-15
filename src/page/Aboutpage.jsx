@@ -23,15 +23,15 @@ function AboutPage() {
 
 	return (
 		<>
-			<section className='h-full mx-8 my-20 flex flex-col justify-between items-center lg:mx-20'>
+			<section className='h-full mx-8 my-20 flex flex-col justify-between items-center lg:h-screen lg:mx-20 lg:py-10 lg:justify-normal lg:gap-y-10'>
 				<h1 className='font-poppins text-12xl uppercase font-bold text-bgcolor100 opacity-20 animate-toRight lg:self-end'>
 					about
 				</h1>
-				<div className='mb-10 animate-toLeft'>
+				<div className='mb-10 animate-toLeft lg:mx-40'>
 					<h2 className='mb-5 font-inter text-5xl font-medium'>
 						hello i&#180;m harold mag-isa
 					</h2>
-					<p className='text-4xl font-inter leading-12 tracking-wide'>
+					<p className='text-4xl font-inter leading-13 tracking-wide'>
 						A passionate self motivated web developer and proficient in react,
 						sass and next. Where i do showcase my work in web development. It
 						has creavity and solving problem from implementing website. Lorem

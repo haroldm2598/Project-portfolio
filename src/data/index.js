@@ -13,7 +13,9 @@ export const projectObjects = [
 		info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ullam perspiciatis doloremque dolorum ad quis accusamus nobis, accusantium incidunt exercitationem facilis. Libero temporibus, porro quaerat tenetur reprehenderit consequatur numquam incidunt',
 		image: '/src/assets/image/todolist.png',
 		orderImage: 2,
-		orderInfo: 1
+		orderInfo: 1,
+		orderImagePosition: -1000,
+		orderInfoPosition: 1000
 	},
 	{
 		title: 'Resume Builder',
@@ -21,7 +23,9 @@ export const projectObjects = [
 		info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ullam perspiciatis doloremque dolorum ad quis accusamus nobis, accusantium incidunt exercitationem facilis. Libero temporibus, porro quaerat tenetur reprehenderit consequatur numquam incidunt',
 		image: '/src/assets/image/resume.png',
 		orderImage: 1,
-		orderInfo: 2
+		orderInfo: 2,
+		orderImagePosition: 1000,
+		orderInfoPosition: -1000
 	},
 	{
 		title: 'Memory Game',
@@ -29,7 +33,9 @@ export const projectObjects = [
 		info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ullam perspiciatis doloremque dolorum ad quis accusamus nobis, accusantium incidunt exercitationem facilis. Libero temporibus, porro quaerat tenetur reprehenderit consequatur numquam incidunt',
 		image: '/src/assets/image/memoryGame.png',
 		orderImage: 2,
-		orderInfo: 1
+		orderInfo: 1,
+		orderImagePosition: -1000,
+		orderInfoPosition: 1000
 	},
 	{
 		title: 'Ecommerce',
@@ -46,6 +52,8 @@ export const projectObjects = [
 		info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ullam perspiciatis doloremque dolorum ad quis accusamus nobis, accusantium incidunt exercitationem facilis. Libero temporibus, porro quaerat tenetur reprehenderit consequatur numquam incidunt',
 		image: '/src/assets/image/ecommerce.png',
 		orderImage: 1,
-		orderInfo: 2
+		orderInfo: 2,
+		orderImagePosition: 1000,
+		orderInfoPosition: -1000
 	}
 ];
