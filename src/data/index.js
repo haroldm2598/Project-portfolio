@@ -1,4 +1,4 @@
-import image1 from '../assets/image/todoList.png';
+import image1 from '../assets/image/todolist.png';
 import image2 from '../assets/image/resume.png';
 import image3 from '../assets/image/memoryGame.png';
 import image4 from '../assets/image/ecommerce.png';
